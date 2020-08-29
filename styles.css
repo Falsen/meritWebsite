@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+form, div {
+    text-align: center;
+}
+
+/*table css*/
+.flat-table{
+    display: block;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 115%;
+    overflow: auto;
+    width: 100%;
+    
+
+  }
+  tr {
+    background-color: rgb(112, 196, 105);
+    color: white;
+    font-weight: normal;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  td {
+    background-color: rgb(238, 238, 238);
+    color:black;
+    padding: 20px 30px;
+  }  
+
+  .first {
+    background-color:green;
+    color: white;
+    padding: 20px 30px;
+      
+  }
+
+/*table2 css*/
+  .first2 {
+    background-color:#E60038;
+    color: white;
+    padding: 20px 30px;
+      
+  }
+/**/
+  button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(45deg, green, black);
+    color: white;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.15);
+    transition: .8s cubic-bezier(.2,1,.2,1);
+    cursor: pointer;
+  }
+
+  select {
+    background: linear-gradient(45deg, green, white);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  #number, #numberO {
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, white, white);
+    color: black;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 10px 20px 0 green;
+  }
+
+h1{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Lemonada', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+ }
