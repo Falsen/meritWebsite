@@ -1,4 +1,36 @@
+$(document).ready(function(){
+    var rawdata = {
+        "tillfalle":"Urval1",
+        "vy":"Antagningspoang",
+        "antagningsomgang":"HT2020",
+        "larosateId":"",
+        "utbildningstyp":"p",
+        "fritextFilter":"",
+        "urvalsGrupp":"",
+        "firstResult":0,
+        "maxResults":25000,
+        "sorteringsKolumn":1,
+        "sorteringsOrdningDesc":false,
+        "requestNumber":1,
+        "paginate":true
+    }
+    var data = encodeURIComponent(JSON.stringify(rawdata));
 
+    var schools = [];
+
+    $.get("https://cors-anywhere.herokuapp.com/statistik.uhr.se/rest/stats/tableData?request="+data, function(data){
+        var output = data.aaData.map(function(entry){
+            var school = entry[4];
+            if(schools.indexOf(school) < 0){
+                schools.push(school)
+            }
+            return [entry[2], entry[6], entry[4]];
+        });
+
+        console.log(output, output.length);
+        console.log(schools);
+    });
+});
 
         let BlekingeTekniskaHogskola = [
 
