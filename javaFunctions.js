@@ -4,7 +4,7 @@ $(document).ready(function(){
     var rawdata = {
         "tillfalle":"Urval1",
         "vy":"Antagningspoang",
-        "antagningsomgang":"HT2019",
+        "antagningsomgang":"HT2020",
         "larosateId":"",
         "utbildningstyp":"p",
         "fritextFilter":"",
